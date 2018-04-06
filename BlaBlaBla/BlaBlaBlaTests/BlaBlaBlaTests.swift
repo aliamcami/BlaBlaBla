@@ -33,4 +33,15 @@ class BlaBlaBlaTests: XCTestCase {
         }
     }
     
+    
+    //------------------------------------------------------------------//
+    //MARK:- Extensions
+    func testArrayRandom(){
+        XCTAssertEqual([1].random, 1)
+    }
+    
+    func testIntRandom() {
+        XCTAssertEqual(Int.random(min: 1, max: 1), 1)
+    }
+    
 }
