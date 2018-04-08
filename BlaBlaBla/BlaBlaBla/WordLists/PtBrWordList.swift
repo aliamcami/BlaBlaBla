@@ -10,7 +10,7 @@ import UIKit
 
 struct PtBrWordList: WordList {
     var countries: [String]{
-        return "na África, na África do Sul, na Alemanha, na América do Norte, na América do Sul, na Antárctida, na Antártida, na Arábia Saudita, na Argentina, na Arménia, na Ásia, na Austrália, na Áustria, na Bahia, na Bélgica, na Bolívia, na China, na Colômbia, na Coreia do Norte, na Coreia do Sul, na Costa do Marfim, na Costa Rica, na Dinamarca, na Espanha, na Etiópia, na Europa, na Finlândia, na França, na Grécia, na Gronelândia, na Guatemala, na Hungria, na Índia, na Indonésia, na Irlanda, na Jamaica, na Jordânia, na Malásia, na Mongólia, na Nigéria, na Noruega, na Nova Zelândia, na Oceania, na Paraíba, na Roménia, na Rondônia, na Rússia, na Síria, na Somália, na Suécia, na Suíça, na Tailândia, na Tanzânia, na Tunísia, na Turquia, na Ucrânia, na Venezuela, nas Bermudas, nas Filipinas, no Acre, no Afeganistão, no Amapá, no Amazonas, no Azerbaijão, no Brasil, no Cabo Verde, no Canadá, no Cazaquistão, no Ceará, no Chile, no Distrito Federal, no Egipto, no Equador, no Espírito Santo, no Goiás, no Haiti, no Iraque, no Japão, no Líbano, no Maranhão, no Marrocos, no Mato Grosso, no Mato Grosso do Sul, no México, no Oceano artico, no Oceano atlantico, no Paquistão, no Pará, no Paraguai, no Paraná, no Peru, no Piauí, no Rio de Janeiro, no Rio Grande do Norte, no Rio Grande do Sul, no Sergipe, no Uruguai, no Vaticano, no Zimbabué, nos Estados Unidos".split(separator: ",").map(String.init)
+        return "na África, na África do Sul, na Alemanha, na América do Norte, na América do Sul, na Antártida, na Arábia Saudita, na Argentina, na Arménia, na Ásia, na Austrália, na Áustria, na Bahia, na Bélgica, na Bolívia, na China, na Colômbia, na Coreia do Norte, na Coreia do Sul, na Costa do Marfim, na Costa Rica, na Dinamarca, na Espanha, na Etiópia, na Europa, na Finlândia, na França, na Grécia, na Gronelândia, na Guatemala, na Hungria, na Índia, na Indonésia, na Irlanda, na Jamaica, na Jordânia, na Malásia, na Mongólia, na Nigéria, na Noruega, na Nova Zelândia, na Oceania, na Paraíba, na Roménia, na Rondônia, na Rússia, na Síria, na Somália, na Suécia, na Suíça, na Tailândia, na Tanzânia, na Tunísia, na Turquia, na Ucrânia, na Venezuela, nas Bermudas, nas Filipinas, no Acre, no Afeganistão, no Amapá, no Amazonas, no Azerbaijão, no Brasil, no Cabo Verde, no Canadá, no Cazaquistão, no Ceará, no Chile, no Distrito Federal, no Egipto, no Equador, no Espírito Santo, no Goiás, no Haiti, no Iraque, no Japão, no Líbano, no Maranhão, no Marrocos, no Mato Grosso, no Mato Grosso do Sul, no México, no Oceano artico, no Oceano atlantico, no Paquistão, no Pará, no Paraguai, no Paraná, no Peru, no Piauí, no Rio de Janeiro, no Rio Grande do Norte, no Rio Grande do Sul, no Sergipe, no Uruguai, no Vaticano, no Zimbabué, nos Estados Unidos".split(separator: ",").map(String.init)
     }
     
     var places: [String]{
@@ -18,7 +18,7 @@ struct PtBrWordList: WordList {
     }
     
     var adjectives: [String]{
-        return "animado, apaixonado, calmo, cansado, carente, carinhoso, chateado, com fome, criativo, curioso, encantado, feliz, Molhado, morto, pelado, preso, raivoso, Seco, vivo".split(separator: ",").map(String.init)
+        return "animado, apaixonado, calmo, cansado, carente, carinhoso, chateado, com fome, criativo, curioso, encantado, feliz, Molhado, morto, pelado, preso, raivoso, Seco".split(separator: ",").map(String.init)
     }
     
     var animals: [String]{

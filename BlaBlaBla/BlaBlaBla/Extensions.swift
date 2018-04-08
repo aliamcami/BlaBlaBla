@@ -25,7 +25,7 @@ extension Int {
 
 extension String{
     ///Concatenate two strings removing all aditional space, also adding a whitespace between strings
-    func concat(with str : String) -> String{
+    func concat(with str: String) -> String{
         return  self.trimmingCharacters(in: CharacterSet.whitespaces) + " " + str.trimmingCharacters(in: CharacterSet.whitespaces)
     }
     

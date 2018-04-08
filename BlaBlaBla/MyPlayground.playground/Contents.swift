@@ -11,9 +11,28 @@ Int.random(min: 1, max: 3)
 
 
 
-PtBrSentenceGenerator.animalInPlaceFromCoutry
-PtBrSentenceGenerator.animalInPlaceFromCoutry
-PtBrSentenceGenerator.animalInPlaceFromCoutry
-PtBrSentenceGenerator.animalInPlaceFromCoutry
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+PtBrSentenceGenerator.random()
+
 
 
