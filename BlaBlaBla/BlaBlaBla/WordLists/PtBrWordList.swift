@@ -1,0 +1,33 @@
+//
+//  PtWordList.swift
+//  BlaBlaBla
+//
+//  Created by camila oliveira on 08/04/18.
+//  Copyright © 2018 Aliamcami. All rights reserved.
+//
+
+import UIKit
+
+struct PtBrWordList: WordList {
+    var countries: [String]{
+        return "na África, na África do Sul, na Alemanha, na América do Norte, na América do Sul, na Antárctida, na Antártida, na Arábia Saudita, na Argentina, na Arménia, na Ásia, na Austrália, na Áustria, na Bahia, na Bélgica, na Bolívia, na China, na Colômbia, na Coreia do Norte, na Coreia do Sul, na Costa do Marfim, na Costa Rica, na Dinamarca, na Espanha, na Etiópia, na Europa, na Finlândia, na França, na Grécia, na Gronelândia, na Guatemala, na Hungria, na Índia, na Indonésia, na Irlanda, na Jamaica, na Jordânia, na Malásia, na Mongólia, na Nigéria, na Noruega, na Nova Zelândia, na Oceania, na Paraíba, na Roménia, na Rondônia, na Rússia, na Síria, na Somália, na Suécia, na Suíça, na Tailândia, na Tanzânia, na Tunísia, na Turquia, na Ucrânia, na Venezuela, nas Bermudas, nas Filipinas, no Acre, no Afeganistão, no Amapá, no Amazonas, no Azerbaijão, no Brasil, no Cabo Verde, no Canadá, no Cazaquistão, no Ceará, no Chile, no Distrito Federal, no Egipto, no Equador, no Espírito Santo, no Goiás, no Haiti, no Iraque, no Japão, no Líbano, no Maranhão, no Marrocos, no Mato Grosso, no Mato Grosso do Sul, no México, no Oceano artico, no Oceano atlantico, no Paquistão, no Pará, no Paraguai, no Paraná, no Peru, no Piauí, no Rio de Janeiro, no Rio Grande do Norte, no Rio Grande do Sul, no Sergipe, no Uruguai, no Vaticano, no Zimbabué, nos Estados Unidos".split(separator: ",").map(String.init)
+    }
+    
+    var places: [String]{
+        return "um Aeroporto, um Avião, um Banco, um Bar, um Caixa Eletrônico, um Carro, um Cinema, um Clube, um Escritório, um Hospital, um Hotel, um Mercado, um Museu, um Ônibus, um Parque, um Posto de Gasolina, um Prédio Comercial, um Prédio residencial, um Restaurante, um salão, um Shopping, um Supermercado, um Teatro, um Trem, um Tribunal, um Zoológico, uma Açougue, uma Barbearia, uma Biblioteca, uma Casa, uma Delegacia, uma Escola, uma Estação de Metrô, uma Faculdade, uma Farmácia, uma Galeria, uma Igreja, uma Joalheria, uma Lanchonete, uma Lavandaria, uma Livraria, uma Loja, uma Lotérica, uma Padaria, uma Parada de Ônibus, uma Pista de Boliche, uma Praça, uma Prisão, uma Psina, uma Quadra de esporte, uma Rodoviária, uma Sala de aula, uma Universidade".split(separator: ",").map(String.init)
+    }
+    
+    var adjectives: [String]{
+        return "animado, apaixonado, calmo, cansado, carente, carinhoso, chateado, com fome, criativo, curioso, encantado, feliz, Molhado, morto, pelado, preso, raivoso, Seco, vivo".split(separator: ",").map(String.init)
+    }
+    
+    var animals: [String]{
+        return "um Cachorro, um Cavalo, um Centauro, um Ciclope, um Coala, um Crocodilo, um Duende, um Elefante, um Gafanhoto, um Gambá, um Gato, um Golfinho, um Homem, um Leão, um Lobisomem, um Lobo, um Macaco, um Minotauro, um Ogro, um Orc, um Panda, um Papagaio, um Passarinho, um Polvo, um Rinoceronte, um Sapo, um Touro, um Unicornio, um Urso, um Vampiro, um Yeti, uma Abelha, uma Aranha, uma Baleia, uma Cobra, uma Fada, uma Fenix, uma Galinha, uma Girafa, uma Mulher, uma Ovelha, uma Sereia, uma Tartaruga, uma Vaca".split(separator: ",").map(String.init)
+    }
+    
+    var objects: [String]{
+        return "uma Tesoura, uma Borracha, um Livro, um Aviao, uma Cama, um Prato, um Copo, uma Faca, uma Colher, um Garfo, uma Mesa, um Tapete, uma Janela, uma Porta".split(separator: ",").map(String.init)
+    }
+    
+    
+}

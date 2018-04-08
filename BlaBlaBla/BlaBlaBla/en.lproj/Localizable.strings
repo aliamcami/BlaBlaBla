@@ -6,8 +6,4 @@
   Copyright © 2018 Aliamcami. All rights reserved.
 */
 
-"countries" = "bla, bla2, bla1";
-"places" = "bla, bla2, bla1";
-"adjectives" = "bla, bla2, bla1";
-"animals" = "bla, bla2, bla1";
-"objects" = "bla, bla2, bla1";
+"EnWordList" = "EnWordList";

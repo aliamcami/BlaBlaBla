@@ -23,3 +23,15 @@ extension Int {
     }
 }
 
+extension String{
+    ///Concatenate two strings removing all aditional space, also adding a whitespace between strings
+    func concat(with str : String) -> String{
+        return  self.trimmingCharacters(in: CharacterSet.whitespaces) + " " + str.trimmingCharacters(in: CharacterSet.whitespaces)
+    }
+    
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).uppercased() + dropFirst().lowercased()
+    }
+
+}
+

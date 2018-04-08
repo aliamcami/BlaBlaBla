@@ -8,3 +8,12 @@ Int.random(min: 1, max: 3)
 
 //Array Random
 ["a","b","c","d","e","f"].random
+
+
+
+PtBrSentenceGenerator.animalInPlaceFromCoutry
+PtBrSentenceGenerator.animalInPlaceFromCoutry
+PtBrSentenceGenerator.animalInPlaceFromCoutry
+PtBrSentenceGenerator.animalInPlaceFromCoutry
+
+

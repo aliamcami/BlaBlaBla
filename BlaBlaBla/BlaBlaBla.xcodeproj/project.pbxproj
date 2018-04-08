@@ -19,9 +19,17 @@
 		864981F220781FFB00573188 /* BlaBlaBlaPlaygound.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 864981EA20781FFA00573188 /* BlaBlaBlaPlaygound.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		864981F72078200400573188 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864981E220781F7B00573188 /* Extensions.swift */; };
 		864981FD2078270600573188 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 864981FF2078270600573188 /* Localizable.strings */; };
-		86498202207828CB00573188 /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498201207828CB00573188 /* WordsLoader.swift */; };
-		864982032078295E00573188 /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498201207828CB00573188 /* WordsLoader.swift */; };
+		86498202207828CB00573188 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498201207828CB00573188 /* Protocols.swift */; };
+		864982032078295E00573188 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498201207828CB00573188 /* Protocols.swift */; };
 		8649820420782C5500573188 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 864981FF2078270600573188 /* Localizable.strings */; };
+		8649820620785EBC00573188 /* EnWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8649820520785EBC00573188 /* EnWordList.swift */; };
+		86498209207862E400573188 /* EnSentenceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498208207862E400573188 /* EnSentenceGenerator.swift */; };
+		8649820C2078645200573188 /* EnSentenceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498208207862E400573188 /* EnSentenceGenerator.swift */; };
+		8649820D2078645700573188 /* EnWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8649820520785EBC00573188 /* EnWordList.swift */; };
+		86498211207A6AEF00573188 /* PtBrSentenceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498210207A6AEF00573188 /* PtBrSentenceGenerator.swift */; };
+		86498213207A6B0A00573188 /* PtBrWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498212207A6B0A00573188 /* PtBrWordList.swift */; };
+		86498214207A70B600573188 /* PtBrSentenceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498210207A6AEF00573188 /* PtBrSentenceGenerator.swift */; };
+		86498215207A70B900573188 /* PtBrWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498212207A6B0A00573188 /* PtBrWordList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +82,11 @@
 		864981F92078266400573188 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		864981FE2078270600573188 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		864982002078271000573188 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		86498201207828CB00573188 /* WordsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
+		86498201207828CB00573188 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		8649820520785EBC00573188 /* EnWordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnWordList.swift; sourceTree = "<group>"; };
+		86498208207862E400573188 /* EnSentenceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnSentenceGenerator.swift; sourceTree = "<group>"; };
+		86498210207A6AEF00573188 /* PtBrSentenceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PtBrSentenceGenerator.swift; sourceTree = "<group>"; };
+		86498212207A6B0A00573188 /* PtBrWordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PtBrWordList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +141,10 @@
 				864981CE20781E9500573188 /* Info.plist */,
 				864981E420781F8400573188 /* New Group */,
 				864981E220781F7B00573188 /* Extensions.swift */,
-				86498201207828CB00573188 /* WordsLoader.swift */,
+				86498201207828CB00573188 /* Protocols.swift */,
+				86498208207862E400573188 /* EnSentenceGenerator.swift */,
+				86498210207A6AEF00573188 /* PtBrSentenceGenerator.swift */,
+				8649820720785EBF00573188 /* WordLists */,
 				864981FF2078270600573188 /* Localizable.strings */,
 			);
 			path = BlaBlaBla;
@@ -163,6 +178,15 @@
 				864981ED20781FFB00573188 /* Info.plist */,
 			);
 			path = BlaBlaBlaPlaygound;
+			sourceTree = "<group>";
+		};
+		8649820720785EBF00573188 /* WordLists */ = {
+			isa = PBXGroup;
+			children = (
+				8649820520785EBC00573188 /* EnWordList.swift */,
+				86498212207A6B0A00573188 /* PtBrWordList.swift */,
+			);
+			path = WordLists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,8 +340,12 @@
 			files = (
 				864981C520781E9500573188 /* ViewController.swift in Sources */,
 				864981E320781F7B00573188 /* Extensions.swift in Sources */,
-				86498202207828CB00573188 /* WordsLoader.swift in Sources */,
+				8649820620785EBC00573188 /* EnWordList.swift in Sources */,
+				86498202207828CB00573188 /* Protocols.swift in Sources */,
+				86498209207862E400573188 /* EnSentenceGenerator.swift in Sources */,
 				864981C320781E9500573188 /* AppDelegate.swift in Sources */,
+				86498211207A6AEF00573188 /* PtBrSentenceGenerator.swift in Sources */,
+				86498213207A6B0A00573188 /* PtBrWordList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +361,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864982032078295E00573188 /* WordsLoader.swift in Sources */,
+				8649820D2078645700573188 /* EnWordList.swift in Sources */,
+				864982032078295E00573188 /* Protocols.swift in Sources */,
+				8649820C2078645200573188 /* EnSentenceGenerator.swift in Sources */,
+				86498215207A70B900573188 /* PtBrWordList.swift in Sources */,
 				864981F72078200400573188 /* Extensions.swift in Sources */,
+				86498214207A70B600573188 /* PtBrSentenceGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
