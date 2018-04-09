@@ -10,19 +10,19 @@ Int.random(min: 1, max: 3)
 ["a","b","c","d","e","f"].random
 
 typealias g = PtBrSentenceGenerator
-g.randomBeingStart()
+g.randomBeingStart(addAdjective: true)
+g.randomAtPlace(addCountry: true)
 g.randomBeingInCountry()
 g.randomBeingInPlace()
 g.randomBeingWithObject()
-g.randomBeingWithObject()
-g.randomInCountry()
+     //g.randomInCountry()
 g.randomAtPlace()
-g.randomAdjective()
-g.randomAdjectiveLike()
+    //g.randomAdjective()
+    //g.randomAdjectiveLike()
 g.randomCountryWithAnimal()
 g.randomPlaceWith()
-g.randomInCountry()
-g.randomAtPlace()
+
+
 
 g.random()
 g.random()

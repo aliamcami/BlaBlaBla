@@ -12,8 +12,8 @@ class PtBrSentenceGenerator: SentenceMaker {
     fileprivate static var wordList: WordList = PtBrWordList()
     
     open static func random() -> String {
-        //randomAdjective(), randomInCountry(), randomAtPlace(),,randomAdjectiveLike()
-        return [randomBeingStart(addAdjective: true),randomBeingInCountry(), randomBeingInPlace(), randomBeingWithObject(), randomBeingWithObject(),randomCountryWithAnimal(),randomPlaceWith()].random
+        //randomAdjective(), randomInCountry(), ,,randomAdjectiveLike()
+        return [randomBeingStart(addAdjective: true), randomAtPlace(addCountry: true),randomBeingInCountry(), randomBeingInPlace(), randomBeingWithObject(), randomBeingWithObject(),randomCountryWithAnimal(),randomPlaceWith()].random
     }
     
     //MARK:- sentence generator
@@ -44,8 +44,8 @@ class PtBrSentenceGenerator: SentenceMaker {
     open static func randomInCountry(_ country: String? = nil) -> String{
         return "Você está".concat(with: country ?? wordList.countries.random).capitalizingFirstLetter()
     }
-    open static func randomAtPlace(_ place: String? = nil) -> String{
-        return "Você está em".concat(with: place ?? placeFromCountry()).capitalizingFirstLetter()
+    open static func randomAtPlace(_ place: String? = nil, addCountry: Bool? = nil) -> String{
+        return "Você está em".concat(with: place ?? placeFromCountry(addCountry: addCountry ?? [true, false].random)).capitalizingFirstLetter()
     }
     open static func randomAdjective(_ adjective: String? = nil) -> String{
         return "Você \(["está", "é"].random)".concat(with: adjective ?? wordList.adjectives.random).capitalizingFirstLetter()
@@ -83,10 +83,10 @@ class PtBrSentenceGenerator: SentenceMaker {
         return being
     }
     
-    static func placeFromCountry(place: String? = nil, country: String? = nil)-> String{
+    static func placeFromCountry(place: String? = nil, country: String? = nil, addCountry: Bool = true)-> String{
         let str = place ?? wordList.places.random
         
-        if [true, false].random{
+        if addCountry {
             let country = "d" + (country ?? wordList.countries.random).trimmingCharacters(in: .whitespaces).dropFirst()
             return str.concat(with: country)
         }
