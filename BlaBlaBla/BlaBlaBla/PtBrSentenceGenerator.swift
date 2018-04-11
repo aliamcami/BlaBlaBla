@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PtBrSentenceGenerator: SentenceMaker {
+class PtBrSentenceGenerator: SentenceGeneratorProtocol {
     open static let all = [rdmAnimal,rdmInPlace, rdmAnimalAdjective, rdmInCountry, rdmWithObject, rdmAnimalWithObject, rdmPlaceWithAnimal, rdmBeingAtPlace, rdmActionObject, rdmWithAnimal, rdmActionObjectWithAnimal]
     
     

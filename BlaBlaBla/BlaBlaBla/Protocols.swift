@@ -17,7 +17,7 @@ protocol WordListProtocol {
 }
 
 //MARKK:- SENTENCE MAKER
-protocol SentenceMaker {
+protocol SentenceGeneratorProtocol {
     static func random() -> String
     typealias wl = WordListProtocol
 }
