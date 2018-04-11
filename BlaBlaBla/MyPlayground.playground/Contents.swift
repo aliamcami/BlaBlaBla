@@ -18,11 +18,25 @@ Int.random(min: 1, max: 3)
 //RANDOM TEST
 typealias g = PtBrSentenceGenerator
 for (i,e) in g.all.enumerated(){
-    print("\(i) - \(e)")
+    print("\(i) - \(e())")
 }
-g.rdmPlaceWithAnimal
-g.rdmWithAnimal
-g.rdmActionObjectWithAnimal
+
+g.animal
+g.animal
+
+g.random()
+g.random()
+g.random()
+g.random()
+g.random()
+g.random()
+g.random()
+g.random()
+g.random()
+g.random()
+g.random()
+g.random()
+
 
 
 
