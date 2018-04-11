@@ -9,7 +9,7 @@
 import UIKit
 
 class PtBrSentenceGenerator: SentenceMaker {
-    open static let all = [rdmAnimal,rdmAnimalRdmAdjective,rdmInCountry,rdmInPlace,rdmWithObject,rdmAnimalWithObject,rdmPlaceWithAnimal,rdmBeingAtPlace,rdmActionObject,rdmWithAnimal]
+    open static let all = [rdmAnimal,rdmAnimalAdjective,rdmInCountry,rdmInPlace,rdmWithObject,rdmAnimalWithObject,rdmPlaceWithAnimal,rdmBeingAtPlace,rdmActionObject,rdmWithAnimal,rdmActionObjectWithAnimal]
     
     
     ///Most importante function: Randomly selects a fucntion that generates a random sentence
@@ -29,32 +29,32 @@ class PtBrSentenceGenerator: SentenceMaker {
         return vcEh.concat(with: animal).capitalizingFirstLetter()
     }
     ///Animal with caracteristic. Ex.: Você é um macaco feliz
-    open static var rdmAnimalRdmAdjective: String {
+    open static var rdmAnimalAdjective: String {
         return vcEh.concat(with: rdmAnimalWithAdjective).capitalizingFirstLetter()
     }
  
     ///Animal in a country
     open static var rdmInCountry: String{
         let verb = ["e está", "e mora"].random
-        let start = [rdmAnimal, rdmAnimalRdmAdjective].random
+        let start = [rdmAnimal, rdmAnimalAdjective].random
         return start.concat(with: verb.concat(with: country)).capitalizingFirstLetter()
     }
     
     ///animal at a Place from rdm Place/-
     open static var rdmInPlace: String {
-        let start = [rdmAnimal, rdmAnimalRdmAdjective, vcEsta].random
+        let start = [rdmAnimal, rdmAnimalAdjective, vcEsta].random
         return start.concat(with: rdmPlaceRdmCountry).capitalizingFirstLetter()
     }
     
     ///Returns a random sentence with animal doing some action with an object, can be in a specific place or not.
     open static var rdmWithObject: String{
-        let start = rdmAnimalRdmAdjective.concat(with: "e está")
+        let start = rdmAnimalAdjective.concat(with: "e está")
         return start.concat(with: rdmVerbObj).capitalizingFirstLetter()
     }
     
     ///Returns animal doing something with object
     open static var rdmAnimalWithObject: String{
-        return rdmAnimalRdmAdjective.concat(with: rdmVerbObj).capitalizingFirstLetter()
+        return rdmAnimalAdjective.concat(with: rdmVerbObj).capitalizingFirstLetter()
     }
     
     
@@ -65,14 +65,20 @@ class PtBrSentenceGenerator: SentenceMaker {
     
     ///"You are with an ANIMAL/Object"
     open static var rdmWithAnimal: String{
-        let verb = ["com", "olhando", "observando", "admirando"].random
-        let start = vcEsta.concat(with: verb)
-        return start.concat(with: rdmAnimalRdmAddAdjective).capitalizingFirstLetter()
+        return vcEsta.concat(with: rdmVerbAnimalRdmAdj).capitalizingFirstLetter()
     }
     
     ///Returns you doing something with an rdm obj
     open static var rdmActionObject: String{
         return vcEsta.concat(with: rdmVerbObj).capitalizingFirstLetter()
+    }
+    
+    ///Returns rdmActionObject plus an animal
+    open static var rdmActionObjectWithAnimal: String{
+        let start =  rdmActionObject.concat(with: "enquanto")
+        let verb = ["dança", "pensa em", "chama", "escolhe", "sonha com", "segue", "espera", "beija"].random
+        return start.concat(with: verb).concat(with: rdmAnimalRdmAdj)
+        
     }
     
     ///Returns someone somewhere
@@ -84,8 +90,7 @@ class PtBrSentenceGenerator: SentenceMaker {
     ///Returns you somewhere with an animal
     open static var rdmPlaceWithAnimal: String{
         let start = vcEsta.concat(with: rdmPlaceRdmCountry)
-        let verb =  ["com", "acompanhando", "vigiando", "observando"].random
-        let anml = verb.concat(with: rdmAnimalRdmAddAdjective)
+        let anml = "com".concat(with: rdmAnimalRdmAdj)
         return start.concat(with: anml).capitalizingFirstLetter()
     }
     
@@ -129,14 +134,8 @@ class PtBrSentenceGenerator: SentenceMaker {
         return a.concat(with: gender(fix: adjective, based: a))
     }
     ///Returns an animal with or without adjective, randomly chosen
-    static var rdmAnimalRdmAddAdjective: String{
+    static var rdmAnimalRdmAdj: String{
         return [animal, rdmAnimalWithAdjective].random
-    }
-    
-    ///Returns place with verb
-    fileprivate static var rdmVerbPlace: String{
-        let verb = ["em", "indo para", "saindo de"].random
-        return verb.concat(with: place)
     }
     
     ///Returns a random place from an random country
@@ -150,10 +149,22 @@ class PtBrSentenceGenerator: SentenceMaker {
         return [rdmVerbPlace, rdmPlaceFromCountry].random
     }
     
+    ///Returns place with verb
+    fileprivate static var rdmVerbPlace: String{
+        let verb = ["em", "indo para", "saindo de", "limpando", "fechando"].random
+        return verb.concat(with: place)
+    }
+    
     ///Returns an objects with a verb that make sense
     fileprivate static var rdmVerbObj: String{
-        let verb = ["segurando", "olhando", "observando", "destruindo", "com", "mordendo" ].random
+        let verb = ["segurando", "olhando", "observando", "destruindo", "com", "mordendo", "beijando", "sonhando com", "cortando"].random
         return verb.concat(with: object)
+    }
+    
+    ///Retuns a verb and animal
+    fileprivate static var rdmVerbAnimalRdmAdj: String{
+        let verb = ["com","acompanhando", "vigiando", "olhando", "observando", "admirando", "namorando", "gostando", "doando", "escutando", "ajudando"].random
+        return verb.concat(with: rdmAnimalRdmAdj)
     }
     
 }

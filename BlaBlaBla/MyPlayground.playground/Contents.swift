@@ -20,7 +20,9 @@ typealias g = PtBrSentenceGenerator
 for (i,e) in g.all.enumerated(){
     print("\(i) - \(e)")
 }
+g.rdmPlaceWithAnimal
+g.rdmWithAnimal
+g.rdmActionObjectWithAnimal
 
 
-//
 
