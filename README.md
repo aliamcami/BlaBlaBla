@@ -11,6 +11,13 @@ import BlaBlaBla
 PtBrSentenceGenerator.random()
 ```
 
+Output example:
+> Você é um canguru zangado e está sonhando com uma colher
+
+> Você é um largato apavorado destruindo uma colher
+
+> Você está beijando uma tábua enquanto chama um Ogro
+
 ## Install
 To be able to use the project:
 - Copy/clone the project
