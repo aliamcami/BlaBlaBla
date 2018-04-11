@@ -27,6 +27,7 @@ class PtBrSentenceGenerator: SentenceMaker {
     open static func rdmAnimal() ->  String{
         return vcEh.concat(with: animal).capitalizingFirstLetter()
     }
+    
     ///Animal with caracteristic. Ex.: Você é um macaco feliz
     open static func rdmAnimalAdjective() -> String {
         return vcEh.concat(with: rdmAnimalWithAdjective).capitalizingFirstLetter()
