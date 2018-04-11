@@ -21,22 +21,7 @@ for (i,e) in g.all.enumerated(){
     print("\(i) - \(e())")
 }
 
-g.animal
-g.animal
-
 g.random()
-g.random()
-g.random()
-g.random()
-g.random()
-g.random()
-g.random()
-g.random()
-g.random()
-g.random()
-g.random()
-g.random()
-
 
 
 
