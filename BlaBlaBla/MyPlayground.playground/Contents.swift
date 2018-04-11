@@ -14,18 +14,13 @@ Int.random(min: 1, max: 3)
 
 " caPTALIZED First".capitalizingFirstLetter()
 
+
+//RANDOM TEST
 typealias g = PtBrSentenceGenerator
-g.randomBeingStart(addAdjective: true)
-g.randomAtPlace(addCountry: true)
-g.randomBeingInCountry()
-g.randomBeingInPlace()
-g.randomBeingWithObject()
-     //g.randomInCountry()
-g.randomAtPlace()
-    //g.randomAdjective()
-    //g.randomAdjectiveLike()
-g.randomCountryWithAnimal()
-g.randomPlaceWith()
+for (i,e) in g.all.enumerated(){
+    print("\(i) - \(e)")
+}
 
 
+//
 
