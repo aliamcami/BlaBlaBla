@@ -2,10 +2,9 @@
 A random sentence generator, mainly designed to start an improvisation story. 
 
 ## Usage
-To get a random sentence in portuguese br: 
+#### Portuguese Br
+To get a random sentence in PORTUGUESE Brazil: 
 ```swift
-import BlaBlaBla
-
 (...)
 
 PtBrSentenceGenerator.random()
@@ -17,6 +16,21 @@ Output example:
 > Você é um largato apavorado destruindo uma colher
 
 > Você está beijando uma tábua enquanto chama um Ogro
+
+#### English
+To get a random sentence in ENGLISH:
+```swift
+(...)
+
+EnSentenceGenerator.random()
+```
+
+Output Example:
+> You are at the café choosing a cushion
+
+>You are smelling a beautiful raccoon in Ireland
+
+>You are a tiny dolphin at the parking lot
 
 ## Install
 To be able to use the project:
