@@ -16,18 +16,17 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BlaBlaBla"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of BlaBlaBla."
+  s.version      = "0.0.2"
+  s.summary      = "A sentence generator with the purpose of creating a initial ambience set for a improvisation story"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+s.description  = "A sentence generator with the purpose of creating a initial ambience set for a improvisation story. It can be created both in English and Brazilian Portuguese. Example of sentences generated: You are dead at the bus terminal."
 
-  s.homepage     = "http://EXAMPLE/BlaBlaBla"
+  s.homepage     = "https://github.com/aliamcami/BlaBlaBla"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +37,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/BlaBlaBla.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/aliamcami/BlaBlaBla.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
