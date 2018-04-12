@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PtBrSentenceGenerator: SentenceMaker {
+class PtBrSentenceGenerator: SentenceGeneratorProtocol {
     open static let all = [rdmAnimal,rdmInPlace, rdmAnimalAdjective, rdmInCountry, rdmWithObject, rdmAnimalWithObject, rdmPlaceWithAnimal, rdmBeingAtPlace, rdmActionObject, rdmWithAnimal, rdmActionObjectWithAnimal]
     
     
@@ -27,6 +27,7 @@ class PtBrSentenceGenerator: SentenceMaker {
     open static func rdmAnimal() ->  String{
         return vcEh.concat(with: animal).capitalizingFirstLetter()
     }
+    
     ///Animal with caracteristic. Ex.: Você é um macaco feliz
     open static func rdmAnimalAdjective() -> String {
         return vcEh.concat(with: rdmAnimalWithAdjective).capitalizingFirstLetter()
@@ -36,7 +37,7 @@ class PtBrSentenceGenerator: SentenceMaker {
     open static func rdmInCountry() ->  String{
         let verb = ["e está", "e mora"].random
         let start = [rdmAnimal, rdmAnimalAdjective].random
-        return start().concat(with: verb.concat(with: country)).capitalizingFirstLetter()
+        return start().concat(with: verb, country).capitalizingFirstLetter()
     }
     
     ///animal at a Place from rdm Place/-
@@ -47,8 +48,7 @@ class PtBrSentenceGenerator: SentenceMaker {
     
     ///Returns a random sentence with animal doing some action with an object, can be in a specific place or not.
     open static func rdmWithObject() ->  String{
-        let start = rdmAnimalAdjective().concat(with: "e está")
-        return start.concat(with: rdmVerbObj).capitalizingFirstLetter()
+        return rdmAnimalAdjective().concat(with: "e está", rdmVerbObj).capitalizingFirstLetter()
     }
     
     ///Returns animal doing something with object
@@ -74,9 +74,8 @@ class PtBrSentenceGenerator: SentenceMaker {
     
     ///Returns rdmActionObject plus an animal
     open static func rdmActionObjectWithAnimal() ->  String{
-        let start =  rdmActionObject().concat(with: "enquanto")
         let verb = ["dança", "pensa em", "chama", "escolhe", "sonha com", "segue", "espera", "beija"].random
-        return start.concat(with: verb).concat(with: rdmAnimalRdmAdj)
+        return rdmActionObject().concat(with: "enquanto", verb, rdmAnimalRdmAdj).capitalizingFirstLetter()
         
     }
     
@@ -88,9 +87,7 @@ class PtBrSentenceGenerator: SentenceMaker {
     
     ///Returns you somewhere with an animal
     open static func rdmPlaceWithAnimal() ->  String{
-        let start = vcEsta.concat(with: rdmPlaceRdmCountry)
-        let anml = "com".concat(with: animal)
-        return start.concat(with: anml).capitalizingFirstLetter()
+        return vcEsta.concat(with: rdmPlaceRdmCountry, "com", animal).capitalizingFirstLetter()
     }
     
     
@@ -128,29 +125,29 @@ class PtBrSentenceGenerator: SentenceMaker {
     
     //MARK: Random variable compositions
     ///Returns an animal with random adjective
-    static var rdmAnimalWithAdjective:  String{
+    fileprivate static var rdmAnimalWithAdjective:  String{
         let a = animal
         return a.concat(with: gender(fix: adjective, based: a))
     }
     ///Returns an animal with or without adjective, randomly chosen
-    static var rdmAnimalRdmAdj: String{
+    fileprivate static var rdmAnimalRdmAdj: String{
         return [animal, rdmAnimalWithAdjective].random
     }
     
     ///Returns a random place from an random country
-    static var rdmPlaceFromCountry:  String{
+    fileprivate static var rdmPlaceFromCountry:  String{
         let ctry = "d" + country.trimmingCharacters(in: .whitespaces).dropFirst()
         return rdmVerbPlace.concat(with: ctry)
     }
     
     ///Returns a random place from or not a country, randomly chosen
-    static var rdmPlaceRdmCountry:  String{
+    fileprivate static var rdmPlaceRdmCountry:  String{
         return [rdmVerbPlace, rdmPlaceFromCountry].random
     }
     
     ///Returns place with verb
     fileprivate static var rdmVerbPlace:  String{
-        let verb = ["em", "indo para", "saindo de", "limpando", "fechando"].random
+        let verb = ["em", "indo para", "saindo de", "limpando"].random
         return verb.concat(with: place)
     }
     

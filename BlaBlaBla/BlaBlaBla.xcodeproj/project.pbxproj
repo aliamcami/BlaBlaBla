@@ -26,6 +26,10 @@
 		86498213207A6B0A00573188 /* PtBrWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498212207A6B0A00573188 /* PtBrWordList.swift */; };
 		86498214207A70B600573188 /* PtBrSentenceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498210207A6AEF00573188 /* PtBrSentenceGenerator.swift */; };
 		86498215207A70B900573188 /* PtBrWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86498212207A6B0A00573188 /* PtBrWordList.swift */; };
+		86B7143D207ED3DD00B45D0B /* EnWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B7143C207ED3DD00B45D0B /* EnWordList.swift */; };
+		86B71441207ED56C00B45D0B /* EnSentenceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B71440207ED56C00B45D0B /* EnSentenceGenerator.swift */; };
+		86B71442207EDF6D00B45D0B /* EnSentenceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B71440207ED56C00B45D0B /* EnSentenceGenerator.swift */; };
+		86B71443207EDF7000B45D0B /* EnWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B7143C207ED3DD00B45D0B /* EnWordList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,8 @@
 		86498201207828CB00573188 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		86498210207A6AEF00573188 /* PtBrSentenceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PtBrSentenceGenerator.swift; sourceTree = "<group>"; };
 		86498212207A6B0A00573188 /* PtBrWordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PtBrWordList.swift; sourceTree = "<group>"; };
+		86B7143C207ED3DD00B45D0B /* EnWordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnWordList.swift; sourceTree = "<group>"; };
+		86B71440207ED56C00B45D0B /* EnSentenceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnSentenceGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 				864981E220781F7B00573188 /* Extensions.swift */,
 				86498201207828CB00573188 /* Protocols.swift */,
 				86498210207A6AEF00573188 /* PtBrSentenceGenerator.swift */,
+				86B71440207ED56C00B45D0B /* EnSentenceGenerator.swift */,
 				8649820720785EBF00573188 /* WordLists */,
 				864981FF2078270600573188 /* Localizable.strings */,
 			);
@@ -177,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				86498212207A6B0A00573188 /* PtBrWordList.swift */,
+				86B7143C207ED3DD00B45D0B /* EnWordList.swift */,
 			);
 			path = WordLists;
 			sourceTree = "<group>";
@@ -331,7 +339,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				864981C520781E9500573188 /* ViewController.swift in Sources */,
+				86B7143D207ED3DD00B45D0B /* EnWordList.swift in Sources */,
 				864981E320781F7B00573188 /* Extensions.swift in Sources */,
+				86B71441207ED56C00B45D0B /* EnSentenceGenerator.swift in Sources */,
 				86498202207828CB00573188 /* Protocols.swift in Sources */,
 				864981C320781E9500573188 /* AppDelegate.swift in Sources */,
 				86498211207A6AEF00573188 /* PtBrSentenceGenerator.swift in Sources */,
@@ -351,9 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B71443207EDF7000B45D0B /* EnWordList.swift in Sources */,
 				864982032078295E00573188 /* Protocols.swift in Sources */,
 				86498215207A70B900573188 /* PtBrWordList.swift in Sources */,
 				864981F72078200400573188 /* Extensions.swift in Sources */,
+				86B71442207EDF6D00B45D0B /* EnSentenceGenerator.swift in Sources */,
 				86498214207A70B600573188 /* PtBrSentenceGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
