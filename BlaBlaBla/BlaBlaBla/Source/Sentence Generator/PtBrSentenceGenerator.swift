@@ -9,11 +9,11 @@
 
 
 public class PtBrSentenceGenerator: SentenceGeneratorProtocol {
-    open static let all = [rdmAnimal,rdmInPlace, rdmAnimalAdjective, rdmInCountry, rdmWithObject, rdmAnimalWithObject, rdmPlaceWithAnimal, rdmBeingAtPlace, rdmActionObject, rdmWithAnimal, rdmActionObjectWithAnimal]
+    public static let all = [rdmAnimal,rdmInPlace, rdmAnimalAdjective, rdmInCountry, rdmWithObject, rdmAnimalWithObject, rdmPlaceWithAnimal, rdmBeingAtPlace, rdmActionObject, rdmWithAnimal, rdmActionObjectWithAnimal]
     
     
     ///Most importante function: Randomly selects a fucntion that generates a random sentence
-    open static func random() -> String {
+    public static func random() -> String {
         return Array(all.dropFirst(2)).random()
     }
     
@@ -24,35 +24,35 @@ public class PtBrSentenceGenerator: SentenceGeneratorProtocol {
     fileprivate static let vcEh = "Você é"
     
     ///Animal only. Ex.: Você é um macaco
-    open static func rdmAnimal() ->  String{
+    public static func rdmAnimal() ->  String{
         return vcEh.concat(with: animal).capitalizingFirstLetter()
     }
     
     ///Animal with caracteristic. Ex.: Você é um macaco feliz
-    open static func rdmAnimalAdjective() -> String {
+    public static func rdmAnimalAdjective() -> String {
         return vcEh.concat(with: rdmAnimalWithAdjective).capitalizingFirstLetter()
     }
  
     ///Animal in a country
-    open static func rdmInCountry() ->  String{
+    public static func rdmInCountry() ->  String{
         let verb = ["e está", "e mora"].random
         let start = [rdmAnimal, rdmAnimalAdjective].random
         return start().concat(with: verb, country).capitalizingFirstLetter()
     }
     
     ///animal at a Place from rdm Place/-
-    open static func rdmInPlace() ->  String{
+    public static func rdmInPlace() ->  String{
         let start = [rdmAnimal(), rdmAnimalAdjective(), vcEsta].random
         return start.concat(with: rdmPlaceRdmCountry).capitalizingFirstLetter()
     }
     
     ///Returns a random sentence with animal doing some action with an object, can be in a specific place or not.
-    open static func rdmWithObject() ->  String{
+    public static func rdmWithObject() ->  String{
         return rdmAnimalAdjective().concat(with: "e está", rdmVerbObj).capitalizingFirstLetter()
     }
     
     ///Returns animal doing something with object
-    open static func rdmAnimalWithObject() ->  String{
+    public static func rdmAnimalWithObject() ->  String{
         return rdmAnimalAdjective().concat(with: rdmVerbObj).capitalizingFirstLetter()
     }
     
@@ -63,30 +63,30 @@ public class PtBrSentenceGenerator: SentenceGeneratorProtocol {
     fileprivate static var vcEsta = "Você está"
     
     ///"You are with an ANIMAL/Object"
-    open static func rdmWithAnimal() ->  String{
+    public static func rdmWithAnimal() ->  String{
         return vcEsta.concat(with: rdmVerbAnimalRdmAdj).capitalizingFirstLetter()
     }
     
     ///Returns you doing something with an rdm obj
-    open static func rdmActionObject() ->  String{
+    public static func rdmActionObject() ->  String{
         return vcEsta.concat(with: rdmVerbObj).capitalizingFirstLetter()
     }
     
     ///Returns rdmActionObject plus an animal
-    open static func rdmActionObjectWithAnimal() ->  String{
+    public static func rdmActionObjectWithAnimal() ->  String{
         let verb = ["dança", "pensa em", "chama", "escolhe", "sonha com", "segue", "espera", "beija"].random
         return rdmActionObject().concat(with: "enquanto", verb, rdmAnimalRdmAdj).capitalizingFirstLetter()
         
     }
     
     ///Returns someone somewhere
-    open static func rdmBeingAtPlace() ->  String{
+    public static func rdmBeingAtPlace() ->  String{
         let start = [rdmActionObject, rdmWithAnimal].random
         return start().concat(with: rdmVerbPlace).capitalizingFirstLetter()
     }
     
     ///Returns you somewhere with an animal
-    open static func rdmPlaceWithAnimal() ->  String{
+    public static func rdmPlaceWithAnimal() ->  String{
         return vcEsta.concat(with: rdmPlaceRdmCountry, "com", animal).capitalizingFirstLetter()
     }
     

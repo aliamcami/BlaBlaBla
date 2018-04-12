@@ -30,9 +30,9 @@ public class EnSentenceGenerator: SentenceGeneratorProtocol {
      17 - You are complaining to a tarantula that's repairing a radio
      18 - You are a raccoon from Iran
      */
-   open static var all = [rdmAreVerb, rdmInCountry, rdmAtPlace, rdmAtPlaceWithObject, rdmAreVerbAnimalAtPlace, rdmAreWithAnimalVerbObjectAtPlace, rdmAreVerbObjectWithAnimalInCountry, rdmAreVerbObjectInCountry, rdmAreWithAnimalInCountry, rdmAreAnimal, rdmAreAdjectiveAtPlace, rdmAreAnimalAtPlace, rdmAreAnimalWithObject, rdmAreAnimalVerbObjectAtPlace, rdmAreVerbObject, rdmAreVerbObjectWithAnimal, rdmAreVerbAnimal, rdmAreVerbAnimalVerbObject,rdmAreAnimalFromCountry]
+   public static var all = [rdmAreVerb, rdmInCountry, rdmAtPlace, rdmAtPlaceWithObject, rdmAreVerbAnimalAtPlace, rdmAreWithAnimalVerbObjectAtPlace, rdmAreVerbObjectWithAnimalInCountry, rdmAreVerbObjectInCountry, rdmAreWithAnimalInCountry, rdmAreAnimal, rdmAreAdjectiveAtPlace, rdmAreAnimalAtPlace, rdmAreAnimalWithObject, rdmAreAnimalVerbObjectAtPlace, rdmAreVerbObject, rdmAreVerbObjectWithAnimal, rdmAreVerbAnimal, rdmAreVerbAnimalVerbObject,rdmAreAnimalFromCountry]
     
-    open static func random() -> String {
+    public static func random() -> String {
         return Array(all.dropFirst(2)).random()
     }
     
@@ -41,7 +41,7 @@ public class EnSentenceGenerator: SentenceGeneratorProtocol {
     
     ///Returns country only.
     ///Ex.: You are in Brazil.
-    open static func rdmInCountry() -> String{
+    public static func rdmInCountry() -> String{
         return "You are in".concat(with: country)
     }
     
@@ -51,13 +51,13 @@ public class EnSentenceGenerator: SentenceGeneratorProtocol {
     ///Returns place from/- Country
     ///Ex.:You are at a Bar.
     ///Ex2.: You are at a Bar from Brazil.
-    open static func rdmAtPlace() -> String{
+    public static func rdmAtPlace() -> String{
         return "You are at the".concat(with: rdmPlaceRdmCountry)
     }
     
     ///Returns place (verb) object
     ///Ex. You are at the club holding a book
-    open static func rdmAtPlaceWithObject() -> String{
+    public static func rdmAtPlaceWithObject() -> String{
         return "You are at the".concat(with: place, verbIng, object)
     }
     
@@ -69,97 +69,97 @@ public class EnSentenceGenerator: SentenceGeneratorProtocol {
     
     ///Returns (verb) animal at place
     ///Ex.: You are  hugging an snake at the bar
-    open static func rdmAreVerbAnimalAtPlace() -> String{
+    public static func rdmAreVerbAnimalAtPlace() -> String{
         return rdmAreVerbAnimal().concat(with: "at the", place)
     }
     
     ///Returns place with animal (verb) object
     ///Ex.: You are with a buterfly kissing a Coffee machine at the bus stop
-    open static func rdmAreWithAnimalVerbObjectAtPlace() -> String{
+    public static func rdmAreWithAnimalVerbObjectAtPlace() -> String{
         return "You are with".concat(with: rdmAnimalRdmAdj, verbIng, object, "at the", place)
     }
 
     ///Returns country with animal (rdm Verb) object
     ///Ex.: You are confiscating a kitchen sponge with a baby in Mexico
-    open static func rdmAreVerbObjectWithAnimalInCountry() -> String{
+    public static func rdmAreVerbObjectWithAnimalInCountry() -> String{
         return rdmAreVerbObject().concat(with: "with", animal, "in", country)
     }
     
     ///Returns (verb) object in country
     ///Ex.: You are carrying a Bed in Brazil
-    open static func rdmAreVerbObjectInCountry() -> String{
+    public static func rdmAreVerbObjectInCountry() -> String{
         return rdmAreVerbObject().concat(with: "in", country)
     }
     
     ///Returns in country (verb) animal
     ///Ex.: You are flying on a Dog in Brazil
-    open static func rdmAreWithAnimalInCountry() -> String{
+    public static func rdmAreWithAnimalInCountry() -> String{
         return rdmAreVerb().concat(with: rdmAnimalRdmAdj, "in", country)
     }
     
     ///Retuns verb
     ///You are complaining
-    open static func rdmAreVerb()-> String{
+    public static func rdmAreVerb()-> String{
         return "You are".concat(with: verbIng)
     }
     
     ///Returns animal
     ///Ex.: You are an dragon
-    open static func rdmAreAnimal() -> String{
+    public static func rdmAreAnimal() -> String{
         return "You are".concat(with: rdmAnimalRdmAdj)
     }
     
     ///Returns adjective at some place
     ///Ex.: You are angry at the shoppin mall
-    open static func rdmAreAdjectiveAtPlace()-> String{
+    public static func rdmAreAdjectiveAtPlace()-> String{
         return "You are".concat(with: adjective, "at the", place)
     }
     
     ///Returns Animal at some place
     ///Ex.: You are an otter at
-    open static func rdmAreAnimalAtPlace()-> String{
+    public static func rdmAreAnimalAtPlace()-> String{
         return rdmAreAnimal().concat(with: "at the", place)
     }
     
     ///Retuns animal (verb) object
     ///Ex.: You are a chinchila napping on a computer
-    open static func rdmAreAnimalWithObject()-> String{
+    public static func rdmAreAnimalWithObject()-> String{
         return rdmAreAnimal().concat(with: verbIng, object)
     }
    
     ///Retuns animal at place (verb) object
     ///Ex.: You are an deer smelling a desk at the barbershop
-    open static func rdmAreAnimalVerbObjectAtPlace()-> String{
+    public static func rdmAreAnimalVerbObjectAtPlace()-> String{
         return rdmAreAnimal().concat(with: verbIng, object, "at the", place)
     }
     
     ///Retuns (verb) object
     ///Ex.: You are sad reparing a cup
-    open static func rdmAreVerbObject()-> String{
+    public static func rdmAreVerbObject()-> String{
         return "You are".concat(with: verbIng, object)
     }
     
     ///Retuns (verb) Object with animal
     ///Ex.: You are drying a clock with a chimera
-    open static func rdmAreVerbObjectWithAnimal()-> String{
+    public static func rdmAreVerbObjectWithAnimal()-> String{
         return rdmAreVerbObject().concat(with: "with", rdmAnimalRdmAdj)
     }
     
     ///Retuns (verb) animal
     ///Ex.: You are smelling a duck
-    open static func rdmAreVerbAnimal()-> String{
+    public static func rdmAreVerbAnimal()-> String{
         return "You are".concat(with: verbIng, rdmAnimalRdmAdj)
     }
 
     ///Returns (verb) animal (verb) Object
     ///Ex.: You are capturing a rabbit that is damaging a Bookcase
-    open static func rdmAreVerbAnimalVerbObject()-> String{
+    public static func rdmAreVerbAnimalVerbObject()-> String{
         return rdmAreVerbAnimal().concat(with: "using", verbIng, object)
     }
     
     ///Returns Animal from country
     ///You are an hamster from Fiji
-    open static func rdmAreAnimalFromCountry()-> String{
+    public static func rdmAreAnimalFromCountry()-> String{
         return rdmAreAnimal().concat(with: "from", country)
     }
     

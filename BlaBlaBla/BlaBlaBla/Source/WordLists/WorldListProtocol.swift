@@ -6,7 +6,7 @@
 //  Copyright © 2018 Aliamcami. All rights reserved.
 //
 
-protocol WordListProtocol {
+public protocol WordListProtocol {
     static var countries: [String] {get}
     static var places: [String] {get}
     static var adjectives: [String] {get}
