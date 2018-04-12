@@ -147,7 +147,7 @@ class PtBrSentenceGenerator: SentenceGeneratorProtocol {
     
     ///Returns place with verb
     fileprivate static var rdmVerbPlace:  String{
-        let verb = ["em", "indo para", "saindo de", "limpando", "fechando"].random
+        let verb = ["em", "indo para", "saindo de", "limpando"].random
         return verb.concat(with: place)
     }
     

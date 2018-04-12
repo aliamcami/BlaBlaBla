@@ -154,7 +154,7 @@ class EnSentenceGenerator: SentenceGeneratorProtocol {
     ///Returns (verb) animal (verb) Object
     ///Ex.: You are capturing a rabbit that is damaging a Bookcase
     open static func rdmAreVerbAnimalVerbObject()-> String{
-        return rdmAreVerbAnimal().concat(with: "that's", verbIng, object)
+        return rdmAreVerbAnimal().concat(with: "using", verbIng, object)
     }
     
     ///Returns Animal from country
