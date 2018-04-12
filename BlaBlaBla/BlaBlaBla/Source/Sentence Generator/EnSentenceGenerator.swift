@@ -8,7 +8,7 @@
 
 
 
-class EnSentenceGenerator: SentenceGeneratorProtocol {
+public class EnSentenceGenerator: SentenceGeneratorProtocol {
     /*
      0 - You are in Lithuania
      1 - You are at the office from Slovakia

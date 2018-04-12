@@ -8,7 +8,7 @@
 
 
 
-class PtBrSentenceGenerator: SentenceGeneratorProtocol {
+public class PtBrSentenceGenerator: SentenceGeneratorProtocol {
     open static let all = [rdmAnimal,rdmInPlace, rdmAnimalAdjective, rdmInCountry, rdmWithObject, rdmAnimalWithObject, rdmPlaceWithAnimal, rdmBeingAtPlace, rdmActionObject, rdmWithAnimal, rdmActionObjectWithAnimal]
     
     

@@ -8,12 +8,12 @@
 
 
 
-protocol SentenceGeneratorProtocol {
+public protocol SentenceGeneratorProtocol {
     static func random() -> String
     static var all : [() -> String] {get}
     typealias wl = WordListProtocol
 }
-extension SentenceGeneratorProtocol{
+public extension SentenceGeneratorProtocol{
     ///Private init
     private init(){self.init()}
 }
