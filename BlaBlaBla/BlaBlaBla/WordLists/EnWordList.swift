@@ -31,7 +31,7 @@ struct EnWordList: WordListProtocol {
     }
     
     static var verbsIng: [String]{
-        return "buying, calling, capturing, carrying, chasing, checking on, choosing, cleaning, complaining to, confiscating, damaging, dancing with, destroying, drying, fixing, flying on, hugging, kissing, licking, lifting, napping on, observing, playing with, repairing, seeing, selling, sitting on, smelling, worshipping".split(separator: ",").map(String.init)
+        return "holding, buying, calling, capturing, carrying, chasing, checking on, choosing, cleaning, complaining to, confiscating, damaging, dancing with, destroying, drying, fixing, flying on, hugging, kissing, licking, lifting, napping on, observing, playing with, repairing, seeing, selling, sitting on, smelling, worshipping".split(separator: ",").map(String.init)
     }
     
 

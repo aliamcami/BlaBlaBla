@@ -16,14 +16,7 @@ Int.random(min: 1, max: 3)
 
 
 //RANDOM TEST
-typealias g = PtBrSentenceGenerator
+typealias g = EnSentenceGenerator
 for (i,e) in g.all.enumerated(){
     print("\(i) - \(e())")
 }
-
-g.random()
-
-
-
-
-
