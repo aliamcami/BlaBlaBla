@@ -6,7 +6,7 @@
 //  Copyright © 2018 Aliamcami. All rights reserved.
 //
 
-import UIKit
+
 
 class PtBrSentenceGenerator: SentenceGeneratorProtocol {
     open static let all = [rdmAnimal,rdmInPlace, rdmAnimalAdjective, rdmInCountry, rdmWithObject, rdmAnimalWithObject, rdmPlaceWithAnimal, rdmBeingAtPlace, rdmActionObject, rdmWithAnimal, rdmActionObjectWithAnimal]
