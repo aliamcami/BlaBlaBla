@@ -1,7 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
-@testable import BlaBlaBlaPlaygound
+@testable import BlaBlaBla
 
 //Int random
 Int.random(min: 1, max: 3)
