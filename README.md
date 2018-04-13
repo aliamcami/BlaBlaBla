@@ -40,17 +40,20 @@ Output Example:
 </details>
 
 ## Install
-To be able to use the project:
+
+#### CocoaPods
+Specify it in your <code>Podfile</code>:<br>
+```swift
+pod 'BlaBlaBla' 
+```
+
+#### Manualy
+To install manually you must:
 - Copy/clone the project
-- Copy the following files to your own project: 
-    - Protocols.swift
-    - Extensions.swift
-    - PtBrSentenceGenerator.swift
-    - WordLists/
+- Copy the Source/ folder into  your project
+- Use to your heart's content
  
 ## TODO
-- Cocoapods installation
-- English sencente generator
 - Localized sentence generator using online translator
 
 ## License
