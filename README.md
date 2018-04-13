@@ -1,9 +1,10 @@
+# BlaBlaBla
+
 [![Cocoapods](https://img.shields.io/cocoapods/v/BlaBlaBla.svg)](https://cocoapods.org/pods/BlaBlaBla)
 [![Swift](https://img.shields.io/badge/Swift-4.1-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-9.3-blue.svg)](https://developer.apple.com/xcode)
-[![MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 
-# Bla Bla Bla
 A random sentence generator, mainly designed to start an improvisation story. <br>
 It can be used to set the start setting for a story, or anything else you want to do with some crazy sentences. 
 
