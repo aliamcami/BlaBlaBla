@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BlaBlaBla"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A sentence generator with the purpose of creating a initial ambience set for a improvisation story"
 
   # This description is used to generate tags and improve search results.
