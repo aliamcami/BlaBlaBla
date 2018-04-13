@@ -63,7 +63,8 @@ s.description  = "A sentence generator with the purpose of creating a initial am
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+   s.platform     = :ios, "8.0"
+   s.swift_version = '4.0'
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -89,7 +90,7 @@ s.description  = "A sentence generator with the purpose of creating a initial am
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Source/*"
+  s.source_files  = "BlaBlaBla/BlaBlaBla/Source/**/*.{Swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
