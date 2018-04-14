@@ -39,7 +39,7 @@ Output example:
     <p>To get a random sentence in ENGLISH:</p>
      <pre><code class="swift">EnSentenceGenerator.random()</code></pre>
     
-For more details [click here](wiki/EnSentenceGenerator)
+For more details [click here](../../wiki/EnSentenceGenerator)
     
 Output Example:
 > You are at the café choosing a cushion
@@ -50,7 +50,7 @@ Output Example:
 </details>  
   <br>
     
-For detailed description visit [WIKI](wiki)
+For detailed description visit [WIKI](../../wiki)
 
 
 ## Install
