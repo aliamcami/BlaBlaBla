@@ -23,6 +23,8 @@ For details on each implemented language:
     <summary>Portuguese BR</summary>
     <p> To get a random sentence in PORTUGUESE Brazil: </p> 
     <pre><code class="swift">PtBrSentenceGenerator.random()</code></pre>
+    
+For more details [click here](PtBrSentenceGenerator)  
 
 Output example:
 > Você é um canguru zangado e está sonhando com uma colher
@@ -36,7 +38,9 @@ Output example:
     <summary>English</summary>
     <p>To get a random sentence in ENGLISH:</p>
      <pre><code class="swift">EnSentenceGenerator.random()</code></pre>
-
+    
+For more details [click here](EnSentenceGenerator)
+    
 Output Example:
 > You are at the café choosing a cushion
 
