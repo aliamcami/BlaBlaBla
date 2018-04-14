@@ -24,7 +24,7 @@ For details on each implemented language:
     <p> To get a random sentence in PORTUGUESE Brazil: </p> 
     <pre><code class="swift">PtBrSentenceGenerator.random()</code></pre>
     
-For more details [click here](PtBrSentenceGenerator)  
+For more details [click here](wiki/PtBrSentenceGenerator)  
 
 Output example:
 > Você é um canguru zangado e está sonhando com uma colher
@@ -39,7 +39,7 @@ Output example:
     <p>To get a random sentence in ENGLISH:</p>
      <pre><code class="swift">EnSentenceGenerator.random()</code></pre>
     
-For more details [click here](EnSentenceGenerator)
+For more details [click here](wiki/EnSentenceGenerator)
     
 Output Example:
 > You are at the café choosing a cushion
@@ -47,7 +47,11 @@ Output Example:
 > You are smelling a beautiful raccoon in Ireland
 
 > You are a tiny dolphin at the parking lot
-</details>
+</details>  
+  <br>
+    
+For detailed description visit [WIKI](wiki)
+
 
 ## Install
 
